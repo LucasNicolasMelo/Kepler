@@ -1,0 +1,22 @@
+.formulario{
+    margin-bottom: 16px;
+    max-width: 600px;
+    
+    label{
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+    .campo{
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid black;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+    textarea.campo{
+        resize: vertical;
+    
+    }
+}

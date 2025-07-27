@@ -1,0 +1,28 @@
+@use "../utilities/extend";
+
+.otra-pagina{
+    @extend %button;
+    display: inline-block;
+    font-size: 16px;
+    background-color: rgb(251, 188, 143);
+    
+}
+.btn-compra{
+    @extend %button;
+    display: block;
+    font-size: 16px;
+    background-color: rgb(102, 181, 241);
+    text-align: center;   
+    
+    &:hover {
+    background-color: rgb(51, 131, 201);
+    color: white;
+    }
+}
+.btn-mail{
+    @extend %button;
+    display: inline-block;
+    font-size: 16px;
+    background-color: rgb(102, 181, 241);
+    text-align: center;   
+}   

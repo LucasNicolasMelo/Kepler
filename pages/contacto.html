@@ -47,32 +47,57 @@
             <article>
                 <h1>¿Querés trabajar con Kepler? </h1>
                 <p>Si tenés un bar, local, distribuidora o simplemente te gustaría ofrecer nuestras birras, dejá tus datos y nos ponemos en contacto.</p>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Tu e-mail </label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <div class="formulario">
+                    <label for="nombre">tu nombre o empresa </label>
+                    <input type="text" class="campo" id="nombre" placeholder="tu nombre o empresa">
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">¿Dónde estás y qué te gustaría vender? Contanos un poco sobre tu local y qué estilos te interesan.</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"> </textarea>
+                <div class="formulario">
+                    <label for="email">tu e-mail </label>
+                    <input type="email" class="campo" id="email" placeholder="name@example.com">
+                </div>
+                <div class="formulario">
+                    <label for="telefono">tu telefono </label>
+                    <input type="tel" class="campo" id="telefono" placeholder="1234-5678">
+                </div>
+                <div class="formulario">
+                    <label for="mensaje">¿Dónde estás y qué te gustaría vender? Contanos un poco sobre tu local y qué estilos te interesan.</label>
+                    <textarea id="mensaje" class="campo" rows="3"></textarea>
                     <a class="btn-mail" href="mailto:ventas@keplercraftbeer.com?subject=Quiero trabajar con Kepler">Enviar</a>
                 </div>
-                
+
             </article>
+
             <article>
                 <h2>Contacto</h2>
-                <img src="https://placehold.co/30x30" alt="">
-                <p>0800-333-KEPL (5375)</p>
-                <img src="https://placehold.co/30x30" alt="">
-                <p>+54 9 11-2687-9978</p>
-                <img src="https://placehold.co/30x30" alt="">
-                <p>contacto@keplercraftbeer.com</p>
-                <img src="https://placehold.co/30x30" alt="">
-                <p>Calle Einstein 1425, San Martín, Buenos Aires</p>
+                <div class="contacto">
+                    <img src="../assets/call-mobile.svg" alt="telefono-logo">
+                    <p>0800-333-KEPL (5375)</p>
+                </div>
+                <div class="contacto">
+                    <img src="../assets/whatsapp-svgrepo-com.svg" alt="whatsapp-logo">
+                    <p>+54 9 11-2687-9978</p>
+                </div>  
+                <div class="contacto"> 
+                    <img src="../assets/mail-svgrepo-com.svg" alt="mail-logo">
+                    <p>contacto@keplercraftbeer.com</p>
+                </div> 
+                <div class="contacto">
+                    <img src="../assets/locate-location-pin-svgrepo-com.svg" alt="ubicacion-logo">
+                    <p>Calle Einstein 1425, San Martín, Buenos Aires</p>
+                </div>
+            </article>
+            <article> 
                 <h2>Redes sociales</h2>
-                <ul>
-                    <li><a class="otra-pagina" href="https://web.facebook.com/" target="_blank">Facebook</a></li>
-                    <li><a class="otra-pagina" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                </ul>
+                <div  class="red-social">
+                    <a class="redes" href="https://web.facebook.com/" target="_blank">
+                        <img src="../assets/facebook-color-svgrepo-com.svg" alt="facebook-logo">
+                    </a>
+                </div>
+                <div  class="red-social">
+                    <a class="redes" href="https://www.instagram.com/" target="_blank">
+                        <img src="../assets/instagram-1-svgrepo-com.svg" alt="instagram-logo">
+                    </a>
+                </div>
             </article>
 
 
@@ -90,7 +115,19 @@
     <footer>
         <p class="p-footer"> © 2025 Kepler Craft Beer. Todos los derechos reservados.
          El contenido de este sitio, incluyendo textos, imágenes, logotipo y diseño, es propiedad de Kepler Craft Beer y no puede ser reproducido ni utilizado sin autorización previa.
-         Fábrica ubicada en General San Martín, Buenos Aires, Argentina.</p>     
+         Fábrica ubicada en General San Martín, Buenos Aires, Argentina.</p> 
+         <div class="footer-redes">    
+            <div  class="red-social">
+                <a class="redes" href="https://web.facebook.com/" target="_blank">
+                    <img src="../assets/facebook-color-svgrepo-com.svg" alt="facebook-logo">
+                </a>
+            </div>
+            <div  class="red-social">
+                <a class="redes" href="https://www.instagram.com/" target="_blank">
+                    <img src="../assets/instagram-1-svgrepo-com.svg" alt="instagram-logo">
+                </a>
+            </div>
+        </div>
     </footer>
 
     <!--BOOTSTRAP JS-->

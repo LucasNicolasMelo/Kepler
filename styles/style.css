@@ -1,178 +1,191 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-/* font-family: "Montserrat", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 
-*{
-    margin: 0;
-    padding: 0;
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* font-family: "Montserrat", sans-serif; */
+.navbar {
+  background-color: antiquewhite;
+  padding: 16px;
+}
+.navbar .nav-link {
+  color: rgb(62, 60, 60);
+  margin-left: 16px;
+  font-weight: 500;
+}
+.navbar .nav-link:hover {
+  color: rgb(138, 1, 1);
+}
+
+.navbar-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-toggler {
+  border: 2px solid black;
+  background-color: rgb(251, 188, 143);
+  padding: 4px 12px;
+  border-radius: 4px;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: antiquewhite;
-    margin: 40px;
+  background-color: antiquewhite;
+  margin: 10px;
 }
+
+p {
+  color: dimgray;
+  font-size: 20px;
+  padding: 10px 30px;
+}
+
 h1 {
-    color: darkgreen; 
-    font-size: 40px;
-    font-weight: 700;
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+  color: darkgreen;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 20px;
+  padding: 20px;
 }
-h2{
-    color: green;
-    font-size: 30px;
-    font-weight: 600;
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    justify-content: left;
 
+h2 {
+  color: green;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px;
+  padding: 20px;
 }
-h3{
-    color: green;
-    font-size: 24px;
-    font-weight: 500;
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    justify-content: left;
+
+h3 {
+  color: green;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px;
+  padding: 20px;
 }
-p{
-    color: dimgray; 
-    font-size: 20px;
-    padding: 10px 30px;
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 20px;
 }
+.contacto img {
+  width: 30px;
+  height: 30px;
+}
+
+.red-social {
+  margin-bottom: 12px;
+}
+.red-social .redes img {
+  width: 50px;
+  height: 50px;
+}
+
 .p-footer {
-    color: black; 
-    font-size: 10px;
-}
-.navbar{
-    background-color: antiquewhite;
-    padding: 1rem;
-}
-.navbar .nav-link{
-    color: rgb(62, 60, 60);
-    margin-left: 1rem;
-    font-weight: 500;
-}
-.navbar .nav-link:hover {
-    color: rgb(138, 1, 1);
-}
-.navbar-icon{
-    width: 30px;
-    height: auto;
-}
-.navbar-toggler{
-    border: 2px solid black;
-    background-color: rgb(251, 188, 143);
-}
-.otra-pagina{
-    margin: 16px;
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    border: 1px solid black;
-    padding: 8px;
-    font-size: 16px;
-    background-color: rgb(251, 188, 143);
-    border-radius: 8px;
-    text-align: left;
-}
-.img-principal {
-    max-width: 700px;
-    padding: 40px;
-    height: auto;
-    margin: auto;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  color: black;
+  font-size: 10px;
+  text-align: center;
 }
 
-.container{
-    max-width: 700px;
-    height: auto;
-    margin: auto;   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+.footer-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.container-btn{
-    width: auto;
-    height: auto;
-    margin: 2px;   
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: left;
+.card-tienda {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.card-tienda .card-birra {
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.card-tienda .card-birra img {
+  width: 100%;
+  border-bottom: 1px solid black;
+  border-radius: 8px;
+}
+.card-tienda .card-birra .contenido-card {
+  padding: 10px;
+}
+.card-tienda .card-birra .contenido-card h5 {
+  font-size: 20px;
+  text-align: center;
+}
+.card-tienda .card-birra .contenido-card p {
+  font-size: 14px;
+  margin: 10px 0;
 }
 
-.card-birra{
-    width: 18rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 20px;
-    border: 2px solid black;
-    padding: 10px;
-}
-.img-card{
-    width: 100%;
-    height: auto;
-    border: 1px solid black;
-    border-radius: 10px;
+.otra-pagina, .btn-compra, .btn-mail {
+  text-decoration: none;
+  color: black;
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 8px 16px;
+  font-weight: 600;
 }
 
-.btn-compra{
-    margin: 16px;
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    border: 1px solid black;
-    padding: 8px;
-    font-size: 16px;
-    background-color: rgb(102, 181, 241);
-    border-radius: 8px;
-    text-align: left;   
+.otra-pagina {
+  display: inline-block;
+  font-size: 16px;
+  background-color: rgb(251, 188, 143);
 }
-.card-tienda{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    padding: 2rem;
+
+.btn-compra {
+  display: block;
+  font-size: 16px;
+  background-color: rgb(102, 181, 241);
+  text-align: center;
 }
-.contenido-card{
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: auto;
+.btn-compra:hover {
+  background-color: rgb(51, 131, 201);
+  color: white;
 }
-.card-title{
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
+
+.btn-mail {
+  display: inline-block;
+  font-size: 16px;
+  background-color: rgb(102, 181, 241);
+  text-align: center;
 }
-.btn-mail{
-    margin: 16px;
-    height: auto;
-    width: 100px;
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    border: 2px solid black;
-    padding: 8px;
-    font-size: 16px;
-    background-color: rgb(102, 181, 241);
-    border-radius: 8px;
-    text-align: center;   
+
+.formulario {
+  margin-bottom: 16px;
+  max-width: 600px;
 }
+.formulario label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.formulario .campo {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+.formulario textarea.campo {
+  resize: vertical;
+}
+
+/*# sourceMappingURL=style.css.map */

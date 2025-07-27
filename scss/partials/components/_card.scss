@@ -1,0 +1,34 @@
+.card-tienda {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  .card-birra {
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      border-bottom: 1px solid black;
+      border-radius: 8px;
+    }
+
+    .contenido-card {
+      padding: 10px;
+
+      h5 {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 14px;
+        margin: 10px 0;
+      }
+
+    
+    }
+  }
+}
