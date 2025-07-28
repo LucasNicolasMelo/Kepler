@@ -204,4 +204,9 @@ h3 {
   resize: vertical;
 }
 
+.carousel-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=style.css.map */
