@@ -1,8 +1,8 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
 .card-tienda {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  @include mixins.flex(row,space-around,center);
 
   .card-birra {
     width: 250px;
@@ -19,12 +19,12 @@
       padding: 10px;
 
       h5 {
-        font-size: 20px;
+        font-size: variables.$fontsize-card;
         text-align: center;
       }
 
       p {
-        font-size: 14px;
+        font-size: variables.$fontsize-p;
         margin: 10px 0;
       }
 

@@ -1,29 +1,40 @@
 @use "../utilities/extend";
+@use "../utilities/variables";
 
 .otra-pagina{
     @extend %button;
     display: inline-block;
     font-size: 16px;
-    background-color: rgb(251, 188, 143);
-    margin: 20px
+    background-color: variables.$backbtn;
+    margin: 20px;
+
+    &:hover {
+    background-color: rgb(152, 185, 213);
+    color: rgb(13, 7, 7);
+    }
     
 }
 .btn-compra{
     @extend %button;
     display: block;
     font-size: 16px;
-    background-color: rgb(102, 181, 241);
+    background-color: variables.$backbtn;
     text-align: center;   
     
     &:hover {
-    background-color: rgb(51, 131, 201);
-    color: white;
+    background-color: rgb(152, 185, 213);
+    color: rgb(13, 7, 7);
     }
 }
 .btn-mail{
     @extend %button;
     display: inline-block;
     font-size: 16px;
-    background-color: rgb(102, 181, 241);
-    text-align: center;   
+    background-color: variables.$backbtn;
+    text-align: center;  
+
+    &:hover {
+    background-color: rgb(152, 185, 213);
+    color: rgb(13, 7, 7);
+    } 
 }   

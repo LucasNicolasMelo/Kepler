@@ -1,3 +1,5 @@
+@use "../utilities/variables";
+
 .formulario{
     margin-bottom: 16px;
     max-width: 600px;
@@ -10,7 +12,7 @@
     .campo{
         width: 100%;
         padding: 8px;
-        font-size: 16px;
+        font-size: variables.$fontsize-p;;
         border: 1px solid black;
         border-radius: 6px;
         box-sizing: border-box;

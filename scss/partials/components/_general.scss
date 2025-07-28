@@ -1,39 +1,44 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
 body {
     background-color: antiquewhite;
     margin: 10px;
 }
 
 p{
-    color: dimgray; 
-    font-size: 20px;
-    padding: 10px 30px;
+    color: variables.$color-p; 
+    font-size: variables.$fontsize-p;
+    padding: 10px 20px;
 }    
 h1 {
-    color: darkgreen; 
-    font-size: 40px;
+    color: variables.$color-h1; 
+    font-size: variables.$fontsize-h1;
     font-weight: 700;
     margin: 20px;
     padding: 20px;
 }
 h2{
-    color: green;
-    font-size: 30px;
+    color: variables.$color-subtitle;
+    font-size: variables.$fontsize-subtitle;
     font-weight: 600;
     margin: 20px;
     padding: 20px;
 }
 h3{
-    color: green;
-    font-size: 24px;
+    color: variables.$color-subtitle;
+    font-size: variables.$fontsize-subtitle;
     font-weight: 500;
     margin: 20px;
     padding: 20px;
 }
 
+h4{
+    color: variables.$color-subtitle;
+    font-size: variables.$fontsize-subtitle;
+}
 .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
+    @include mixins.flex(column,center,left);
     margin: 20px;
     img{
         width: 30px;
@@ -49,26 +54,19 @@ h3{
     }
 }
 .cerveza{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
+    @include mixins.flex(row,space-around,flex-start);
     .cerveza-info{
         max-width: 700px;
         width: 100%;
+        margin: 10px 0px;
     }
     .cerveza-img{
-        max-width: 100px;
-        width: 100px;
-        height: 100px;
+        margin: 6px 0px;
     }
 
 }
 .section-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include mixins.flex(column,center,center);
     gap: 20px;
     .section-texto {
         max-width: 800px;
@@ -77,10 +75,7 @@ h3{
     }
 }
 .contenido-secundario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include mixins.flex(column,center,center);
     margin-top: 20px;
     .texto-secundario {
         max-width: 600px;
@@ -90,10 +85,7 @@ h3{
 }
 
 .contenido-dudas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include mixins.flex(column,center,center);
     .texto-dudas {
         max-width: 600px;
         width: 100%;

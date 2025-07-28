@@ -1,6 +1,8 @@
+@use "./variables";
+
 %button{
     text-decoration: none;
-    color: black;
+    color: variables.$p-btn;
     border-radius: 8px;
     border: 1px solid black;
     padding: 8px 16px;
