@@ -1,8 +1,19 @@
 @use "../utilities/variables";
+@use "../utilities/mixins";
 
+-info-contacto{
+    @include mixins.flex(column,center,center);
+}
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .formulario{
     margin-bottom: 16px;
     max-width: 600px;
+    width: 100%;
     
     label{
         display: block;

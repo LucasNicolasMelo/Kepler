@@ -38,7 +38,7 @@ h4{
     font-size: variables.$fontsize-subtitle;
 }
 .contacto {
-    @include mixins.flex(column,center,left);
+    @include mixins.flex(column,center,center);
     margin: 20px;
     img{
         width: 30px;
@@ -46,6 +46,7 @@ h4{
     }
 }
 .red-social{
+    @include mixins.flex(column,center,center);
     margin-bottom: 12px;
     .redes img{
         width: 50px;

@@ -82,7 +82,7 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   margin: 20px;
 }
 .contacto img {
@@ -91,10 +91,6 @@ h4 {
 }
 
 .red-social {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 12px;
 }
 .red-social .redes img {
@@ -242,8 +238,9 @@ h4 {
 -info-contacto {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .formulario-contacto {
@@ -280,4 +277,4 @@ h4 {
   margin: 0 auto;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
