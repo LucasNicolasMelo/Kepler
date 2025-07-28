@@ -2,7 +2,9 @@
 @use "../utilities/mixins";
 
 .card-tienda {
-  @include mixins.flex(row,space-around,center);
+  @include mixins.flex(row,center,center);
+  gap: 30px;
+  flex-wrap: wrap;
 
   .card-birra {
     width: 250px;
@@ -12,7 +14,8 @@
     img {
       width: 100%;
       border-bottom: 1px solid black;
-      border-radius: 8px;
+      border-radius: 10px;
+      padding: 8px;
     }
 
     .contenido-card {
@@ -26,9 +29,23 @@
       p {
         font-size: variables.$fontsize-p;
         margin: 10px 0;
-      }
-
+      } 
+    }      
+  }
     
+  @media (max-width: 450px) {
+    .card-birra {
+      width: 90%;
+      margin-bottom: 15px;
+    }
+  }
+  @media (min-width: 451px) and (max-width: 1024px) {
+    .card-tienda {
+      justify-content: center;
+    }
+    .card-birra {
+      width: 45%;
+      margin-bottom: 20px;
     }
   }
 }

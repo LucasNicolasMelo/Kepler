@@ -1,8 +1,16 @@
 @use "../utilities/variables";
 @use "../utilities/mixins";
 
--info-contacto{
+.info-contacto{
     @include mixins.flex(column,center,center);
+    padding: 20px;
+    @media (max-width: 450px) {
+    padding: 10px;
+  }
+
+  @media (min-width: 451px) and (max-width: 1024px) {
+    padding: 15px;
+  }
 }
 .formulario-contacto {
     display: flex;
@@ -14,22 +22,44 @@
     margin-bottom: 16px;
     max-width: 600px;
     width: 100%;
+    @media (max-width: 450px) {
+    padding: 0 10px;
+  }
+
+  @media (min-width: 451px) and (max-width: 1024px) {
+    padding: 0 20px;
+  }
     
     label{
         display: block;
         font-weight: 600;
         margin-bottom: 6px;
+        @media (max-width: 450px) {
+            font-size: 10px;
+        }
+
+        @media (min-width: 451px) and (max-width: 1024px) {
+            font-size: 12px;
+        }
     }
     .campo{
         width: 100%;
         padding: 8px;
-        font-size: variables.$fontsize-p;;
+        font-size: variables.$fontsize-p;
         border: 1px solid black;
         border-radius: 6px;
         box-sizing: border-box;
+        @media (max-width: 450px) {
+            font-size: 10px;
+        }
+
+        @media (min-width: 451px) and (max-width: 1024px) {
+            font-size: 12px;
+        }
     }
     textarea.campo{
         resize: vertical;
+        margin-bottom: 8px;
     
     }
 }

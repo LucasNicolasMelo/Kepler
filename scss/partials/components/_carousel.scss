@@ -1,4 +1,10 @@
 .carousel-container{
     max-width: 600px;
     margin: 0 auto;
+    @media (max-width: 450px) {
+        max-width: 90%;
+  }
+    @media (min-width: 451px) and (max-width: 1024px) {
+        max-width: 450px;
+  }
 }

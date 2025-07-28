@@ -17,18 +17,55 @@ li {
   background-color: antiquewhite;
   padding: 16px;
 }
+@media (max-width: 450px) {
+  .navbar {
+    padding: 8px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .navbar {
+    padding: 12px;
+  }
+}
 .navbar .nav-link {
   color: rgb(62, 60, 60);
   margin-left: 16px;
   font-weight: 500;
+  padding: 12px 0;
 }
 .navbar .nav-link:hover {
   color: rgb(9, 150, 28);
+}
+@media (max-width: 450px) {
+  .navbar .nav-link {
+    margin-left: 8px;
+    font-size: 12px;
+    padding: 8px 0;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .navbar .nav-link {
+    margin-left: 12px;
+    font-size: 14px;
+    padding: 10px 0;
+  }
 }
 
 .navbar-icon {
   width: 30px;
   height: 30px;
+}
+@media (max-width: 450px) {
+  .navbar-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .navbar-icon {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 .navbar-toggler {
@@ -37,16 +74,48 @@ li {
   padding: 4px 12px;
   border-radius: 4px;
 }
+@media (max-width: 450px) {
+  .navbar-toggler {
+    padding: 2px 8px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .navbar-toggler {
+    padding: 3px 10px;
+  }
+}
 
 body {
   background-color: antiquewhite;
   margin: 10px;
+}
+@media (max-width: 450px) {
+  body {
+    margin: 5px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  body {
+    margin: 8px;
+  }
 }
 
 p {
   color: dimgray;
   font-size: 16px;
   padding: 10px 20px;
+}
+@media (max-width: 450px) {
+  p {
+    font-size: 8px;
+    padding: 5px 10px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  p {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
 }
 
 h1 {
@@ -56,6 +125,20 @@ h1 {
   margin: 20px;
   padding: 20px;
 }
+@media (max-width: 450px) {
+  h1 {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  h1 {
+    font-size: 30px;
+    margin: 16px;
+    padding: 16px;
+  }
+}
 
 h2 {
   color: rgb(3, 152, 3);
@@ -63,6 +146,20 @@ h2 {
   font-weight: 600;
   margin: 20px;
   padding: 20px;
+}
+@media (max-width: 450px) {
+  h2 {
+    font-size: 12px;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  h2 {
+    font-size: 16px;
+    margin: 16px;
+    padding: 16px;
+  }
 }
 
 h3 {
@@ -72,10 +169,34 @@ h3 {
   margin: 20px;
   padding: 20px;
 }
+@media (max-width: 450px) {
+  h3 {
+    font-size: 12px;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  h3 {
+    font-size: 16px;
+    margin: 16px;
+    padding: 16px;
+  }
+}
 
 h4 {
   color: rgb(3, 152, 3);
   font-size: 30px;
+}
+@media (max-width: 450px) {
+  h4 {
+    font-size: 12px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  h4 {
+    font-size: 16px;
+  }
 }
 
 .contacto {
@@ -89,6 +210,24 @@ h4 {
   width: 30px;
   height: 30px;
 }
+@media (max-width: 450px) {
+  .contacto {
+    margin: 10px;
+  }
+  .contacto img {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .contacto {
+    margin: 16px;
+  }
+  .contacto img {
+    width: 25px;
+    height: 25px;
+  }
+}
 
 .red-social {
   display: flex;
@@ -100,6 +239,24 @@ h4 {
 .red-social .redes img {
   width: 50px;
   height: 50px;
+}
+@media (max-width: 450px) {
+  .red-social {
+    margin-bottom: 8px;
+  }
+  .red-social img {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .red-social {
+    margin-bottom: 12px;
+  }
+  .red-social img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .cerveza {
@@ -114,7 +271,42 @@ h4 {
   margin: 10px 0px;
 }
 .cerveza .cerveza-img {
+  width: 184px;
+  height: 236px;
   margin: 6px 0px;
+}
+@media (max-width: 450px) {
+  .cerveza {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cerveza .cerveza-info {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px 5px;
+  }
+  .cerveza .cerveza-img {
+    width: 90px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .cerveza {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cerveza .cerveza-info {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px 10px;
+  }
+  .cerveza .cerveza-img {
+    width: 150px;
+    height: auto;
+  }
 }
 
 .section-principal {
@@ -129,6 +321,22 @@ h4 {
   width: 100%;
   text-align: center;
 }
+@media (max-width: 450px) {
+  .section-principal {
+    gap: 10px;
+  }
+  .section-principal .section-texto {
+    padding: 0px 5px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .section-principal {
+    gap: 16px;
+  }
+  .section-principal .section-texto {
+    padding: 0px 10px;
+  }
+}
 
 .contenido-secundario {
   display: flex;
@@ -142,6 +350,22 @@ h4 {
   width: 100%;
   text-align: center;
 }
+@media (max-width: 450px) {
+  .contenido-secundario {
+    margin-top: 10px;
+  }
+  .contenido-secundario .texto-secundario {
+    padding: 0px 5px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .contenido-secundario {
+    margin-top: 16px;
+  }
+  .contenido-secundario .texto-secundario {
+    padding: 0px 10px;
+  }
+}
 
 .contenido-dudas {
   display: flex;
@@ -154,11 +378,40 @@ h4 {
   width: 100%;
   text-align: center;
 }
+@media (max-width: 450px) {
+  .contenido-dudas {
+    margin-top: 10px;
+  }
+  .contenido-dudas .texto-dudas {
+    padding: 0px 5px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .contenido-dudas {
+    margin-top: 16px;
+  }
+  .contenido-dudas .texto-dudas {
+    padding: 0px 10px;
+  }
+}
 
 .p-footer {
   color: black;
   font-size: 10px;
   text-align: center;
+  padding: 10px;
+}
+@media (max-width: 450px) {
+  .p-footer {
+    font-size: 8px;
+    padding: 0px 5px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .p-footer {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
 }
 
 .footer-redes {
@@ -168,12 +421,24 @@ h4 {
   align-items: center;
   gap: 10px;
 }
+@media (max-width: 450px) {
+  .footer-redes {
+    gap: 5px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .footer-redes {
+    gap: 8px;
+  }
+}
 
 .card-tienda {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 .card-tienda .card-birra {
   width: 250px;
@@ -183,7 +448,8 @@ h4 {
 .card-tienda .card-birra img {
   width: 100%;
   border-bottom: 1px solid black;
-  border-radius: 8px;
+  border-radius: 10px;
+  padding: 8px;
 }
 .card-tienda .card-birra .contenido-card {
   padding: 10px;
@@ -195,6 +461,21 @@ h4 {
 .card-tienda .card-birra .contenido-card p {
   font-size: 16px;
   margin: 10px 0;
+}
+@media (max-width: 450px) {
+  .card-tienda .card-birra {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .card-tienda .card-tienda {
+    justify-content: center;
+  }
+  .card-tienda .card-birra {
+    width: 45%;
+    margin-bottom: 20px;
+  }
 }
 
 .otra-pagina, .btn-compra, .btn-mail {
@@ -211,10 +492,25 @@ h4 {
   font-size: 16px;
   background-color: rgb(201, 210, 201);
   margin: 20px;
+  padding: 10px 20px;
 }
 .otra-pagina:hover {
   background-color: rgb(152, 185, 213);
   color: rgb(13, 7, 7);
+}
+@media (max-width: 450px) {
+  .otra-pagina {
+    font-size: 12px;
+    margin: 8px;
+    padding: 8px 14px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .otra-pagina {
+    font-size: 14px;
+    margin: 12px;
+    padding: 10px 16px;
+  }
 }
 
 .btn-compra {
@@ -227,6 +523,20 @@ h4 {
   background-color: rgb(152, 185, 213);
   color: rgb(13, 7, 7);
 }
+@media (max-width: 450px) {
+  .btn-compra {
+    font-size: 12px;
+    margin: 8px;
+    padding: 8px 14px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .btn-compra {
+    font-size: 14px;
+    margin: 12px;
+    padding: 10px 16px;
+  }
+}
 
 .btn-mail {
   display: inline-block;
@@ -238,12 +548,37 @@ h4 {
   background-color: rgb(152, 185, 213);
   color: rgb(13, 7, 7);
 }
+@media (max-width: 450px) {
+  .btn-mail {
+    font-size: 12px;
+    margin: 8px;
+    padding: 8px 14px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .btn-mail {
+    font-size: 14px;
+    margin: 12px;
+    padding: 10px 16px;
+  }
+}
 
--info-contacto {
+.info-contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+}
+@media (max-width: 450px) {
+  .info-contacto {
+    padding: 10px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .info-contacto {
+    padding: 15px;
+  }
 }
 
 .formulario-contacto {
@@ -258,10 +593,30 @@ h4 {
   max-width: 600px;
   width: 100%;
 }
+@media (max-width: 450px) {
+  .formulario {
+    padding: 0 10px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .formulario {
+    padding: 0 20px;
+  }
+}
 .formulario label {
   display: block;
   font-weight: 600;
   margin-bottom: 6px;
+}
+@media (max-width: 450px) {
+  .formulario label {
+    font-size: 10px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .formulario label {
+    font-size: 12px;
+  }
 }
 .formulario .campo {
   width: 100%;
@@ -271,13 +626,34 @@ h4 {
   border-radius: 6px;
   box-sizing: border-box;
 }
+@media (max-width: 450px) {
+  .formulario .campo {
+    font-size: 10px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .formulario .campo {
+    font-size: 12px;
+  }
+}
 .formulario textarea.campo {
   resize: vertical;
+  margin-bottom: 8px;
 }
 
 .carousel-container {
   max-width: 600px;
   margin: 0 auto;
+}
+@media (max-width: 450px) {
+  .carousel-container {
+    max-width: 90%;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .carousel-container {
+    max-width: 450px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

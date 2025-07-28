@@ -4,12 +4,28 @@
 body {
     background-color: antiquewhite;
     margin: 10px;
+    @media (max-width: 450px) {
+        margin: 5px;
+    }
+    @media (min-width: 451px) and (max-width: 1024px) {
+        margin: 8px;
+    }
 }
 
 p{
     color: variables.$color-p; 
     font-size: variables.$fontsize-p;
     padding: 10px 20px;
+
+    @media (max-width: 450px) {
+        font-size: 8px;
+        padding: 5px 10px;
+    }
+    @media (min-width: 451px) and (max-width: 1024px) {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
 }    
 h1 {
     color: variables.$color-h1; 
@@ -17,6 +33,16 @@ h1 {
     font-weight: 700;
     margin: 20px;
     padding: 20px;
+    @media (max-width: 450px) {
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+    @media (min-width: 451px) and (max-width: 1024px) {
+        font-size: 30px;
+        margin: 16px;
+        padding: 16px;
+    }
 }
 h2{
     color: variables.$color-subtitle;
@@ -24,6 +50,16 @@ h2{
     font-weight: 600;
     margin: 20px;
     padding: 20px;
+    @media (max-width: 450px) {
+        font-size: 12px;
+        margin: 10px;
+        padding: 10px;
+    }
+    @media (min-width: 451px) and (max-width: 1024px) {
+        font-size: 16px;
+        margin: 16px;
+        padding: 16px;
+    }
 }
 h3{
     color: variables.$color-subtitle;
@@ -31,11 +67,27 @@ h3{
     font-weight: 500;
     margin: 20px;
     padding: 20px;
+    @media (max-width: 450px) {
+        font-size: 12px;
+        margin: 10px;
+        padding: 10px;
+    }
+    @media (min-width: 451px) and (max-width: 1024px) {
+        font-size: 16px;
+        margin: 16px;
+        padding: 16px;
+    }
 }
 
 h4{
     color: variables.$color-subtitle;
     font-size: variables.$fontsize-subtitle;
+    @media (max-width: 450px) {
+        font-size: 12px;
+    }
+    @media (min-width: 451px) and (max-width: 1024px) {
+        font-size: 16px;
+    }
 }
 .contacto {
     @include mixins.flex(column,center,center);
@@ -44,6 +96,20 @@ h4{
         width: 30px;
         height: 30px;
     }
+    @media (max-width: 450px) {
+        margin: 10px;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    @media (min-width: 451px) and (max-width: 1024px) {
+        margin: 16px;
+        img{
+            width: 25px;
+            height: 25px;
+        }
+    }
 }
 .red-social{
     @include mixins.flex(column,center,center);
@@ -51,8 +117,21 @@ h4{
     .redes img{
         width: 50px;
         height: 50px;
-
     }
+    @media (max-width: 450px) {
+        margin-bottom: 8px;
+        img{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    @media (min-width: 451px) and (max-width: 1024px) {
+        margin-bottom: 12px;
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }       
 }
 .cerveza{
     @include mixins.flex(row,space-around,flex-start);
@@ -62,8 +141,33 @@ h4{
         margin: 10px 0px;
     }
     .cerveza-img{
+        width: 184px;
+        height: 236px;
         margin: 6px 0px;
     }
+    @media (max-width: 450px) {
+        @include mixins.flex(column,center,center);
+        .cerveza-info{
+            max-width: 100%;
+            margin: 0px;
+            padding: 0px 5px;
+        }
+        .cerveza-img{
+            width: 90px;
+        }
+    }
+    @media (min-width: 451px) and (max-width: 1024px) {
+        @include mixins.flex(column,center,center);
+        .cerveza-info{
+            max-width: 100%;
+            margin: 0px;
+            padding: 0px 10px;
+        }
+        .cerveza-img{
+            width: 150px;
+            height: auto;
+        }
+    }       
 
 }
 .section-principal {
@@ -74,6 +178,18 @@ h4{
         width: 100%;
         text-align: center;
     }
+    @media (max-width: 450px) {
+        gap: 10px;
+        .section-texto{
+            padding: 0px 5px;
+        }
+    }
+    @media (min-width: 451px) and (max-width: 1024px) {
+        gap: 16px;
+        .section-texto{
+            padding: 0px 10px;
+        }
+    }       
 }
 .contenido-secundario{
     @include mixins.flex(column,center,center);
@@ -83,6 +199,18 @@ h4{
         width: 100%;
         text-align: center;
     }
+    @media (max-width: 450px) {
+        margin-top: 10px;
+        .texto-secundario {
+            padding: 0px 5px;
+        }
+    }
+    @media (min-width: 451px) and (max-width: 1024px) {
+        margin-top: 16px;
+        .texto-secundario {
+            padding: 0px 10px;
+        }
+    }       
 }
 
 .contenido-dudas{
@@ -92,4 +220,16 @@ h4{
         width: 100%;
         text-align: center;
     }
+    @media (max-width: 450px) {
+        margin-top: 10px;
+        .texto-dudas {
+            padding: 0px 5px;
+        }
+    }
+    @media (min-width: 451px) and (max-width: 1024px) {
+        margin-top: 16px;
+        .texto-dudas {
+            padding: 0px 10px;
+        }
+    }       
 }
