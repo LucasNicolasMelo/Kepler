@@ -64,3 +64,39 @@ h3{
     }
 
 }
+.section-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .section-texto {
+        max-width: 800px;
+        width: 100%;
+        text-align: center;
+    }
+}
+.contenido-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    .texto-secundario {
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.contenido-dudas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .texto-dudas {
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+    }
+}
