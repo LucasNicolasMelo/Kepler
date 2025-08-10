@@ -3,9 +3,9 @@
 
 body {
     background-color: antiquewhite;
-    margin: 10px;
+    margin: 5px;
     @media (max-width: 450px) {
-        margin: 5px;
+        margin: 2px;
     }
     @media (min-width: 451px) and (max-width: 1024px) {
         margin: 8px;
@@ -18,7 +18,7 @@ p{
     padding: 10px 20px;
 
     @media (max-width: 450px) {
-        font-size: 8px;
+        font-size: 10px;
         padding: 5px 10px;
     }
     @media (min-width: 451px) and (max-width: 1024px) {
@@ -136,7 +136,7 @@ h4{
 .cerveza{
     @include mixins.flex(row,space-around,flex-start);
     .cerveza-info{
-        max-width: 700px;
+        max-width: 900px;
         width: 100%;
         margin: 10px 0px;
     }
@@ -174,11 +174,12 @@ h4{
     @include mixins.flex(column,center,center);
     gap: 20px;
     .section-texto {
-        max-width: 800px;
+        max-width: 1200px;
         width: 100%;
         text-align: center;
     }
     @media (max-width: 450px) {
+        width: 90%;
         gap: 10px;
         .section-texto{
             padding: 0px 5px;
@@ -193,15 +194,21 @@ h4{
 }
 .contenido-secundario{
     @include mixins.flex(column,center,center);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     margin-top: 20px;
     .texto-secundario {
-        max-width: 600px;
+        max-width: 1000px;
         width: 100%;
         text-align: center;
     }
     @media (max-width: 450px) {
+        margin: 0;
         margin-top: 10px;
+        width: 90%;
         .texto-secundario {
+            width: 100%;
             padding: 0px 5px;
         }
     }
@@ -216,11 +223,12 @@ h4{
 .contenido-dudas{
     @include mixins.flex(column,center,center);
     .texto-dudas {
-        max-width: 600px;
+        max-width: 1200px;
         width: 100%;
         text-align: center;
     }
     @media (max-width: 450px) {
+        width: 90%;
         margin-top: 10px;
         .texto-dudas {
             padding: 0px 5px;
@@ -232,4 +240,16 @@ h4{
             padding: 0px 10px;
         }
     }       
+}
+.img-secundaria{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    @media (max-width: 450px) {
+        width: 90%;
+        height: auto;
+    }
 }

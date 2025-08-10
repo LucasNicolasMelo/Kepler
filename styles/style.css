@@ -16,9 +16,12 @@ li {
 .navbar {
   background-color: antiquewhite;
   padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
 }
 @media (max-width: 450px) {
   .navbar {
+    width: 100%;
     padding: 8px;
   }
 }
@@ -87,11 +90,11 @@ li {
 
 body {
   background-color: antiquewhite;
-  margin: 10px;
+  margin: 5px;
 }
 @media (max-width: 450px) {
   body {
-    margin: 5px;
+    margin: 2px;
   }
 }
 @media (min-width: 451px) and (max-width: 1024px) {
@@ -102,12 +105,12 @@ body {
 
 p {
   color: dimgray;
-  font-size: 16px;
+  font-size: 20px;
   padding: 10px 20px;
 }
 @media (max-width: 450px) {
   p {
-    font-size: 8px;
+    font-size: 10px;
     padding: 5px 10px;
   }
 }
@@ -120,7 +123,7 @@ p {
 
 h1 {
   color: darkgreen;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
   margin: 20px;
   padding: 20px;
@@ -142,7 +145,7 @@ h1 {
 
 h2 {
   color: rgb(3, 152, 3);
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   margin: 20px;
   padding: 20px;
@@ -164,7 +167,7 @@ h2 {
 
 h3 {
   color: rgb(3, 152, 3);
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 500;
   margin: 20px;
   padding: 20px;
@@ -186,7 +189,7 @@ h3 {
 
 h4 {
   color: rgb(3, 152, 3);
-  font-size: 30px;
+  font-size: 40px;
 }
 @media (max-width: 450px) {
   h4 {
@@ -266,7 +269,7 @@ h4 {
   align-items: flex-start;
 }
 .cerveza .cerveza-info {
-  max-width: 700px;
+  max-width: 900px;
   width: 100%;
   margin: 10px 0px;
 }
@@ -317,12 +320,13 @@ h4 {
   gap: 20px;
 }
 .section-principal .section-texto {
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
   text-align: center;
 }
 @media (max-width: 450px) {
   .section-principal {
+    width: 90%;
     gap: 10px;
   }
   .section-principal .section-texto {
@@ -343,18 +347,24 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   margin-top: 20px;
 }
 .contenido-secundario .texto-secundario {
-  max-width: 600px;
+  max-width: 1000px;
   width: 100%;
   text-align: center;
 }
 @media (max-width: 450px) {
   .contenido-secundario {
+    margin: 0;
     margin-top: 10px;
+    width: 90%;
   }
   .contenido-secundario .texto-secundario {
+    width: 100%;
     padding: 0px 5px;
   }
 }
@@ -374,12 +384,13 @@ h4 {
   align-items: center;
 }
 .contenido-dudas .texto-dudas {
-  max-width: 600px;
+  max-width: 1200px;
   width: 100%;
   text-align: center;
 }
 @media (max-width: 450px) {
   .contenido-dudas {
+    width: 90%;
     margin-top: 10px;
   }
   .contenido-dudas .texto-dudas {
@@ -395,6 +406,21 @@ h4 {
   }
 }
 
+.img-secundaria {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 450px) {
+  .img-secundaria {
+    width: 90%;
+    height: auto;
+  }
+}
+
 .p-footer {
   color: black;
   font-size: 10px;
@@ -404,6 +430,7 @@ h4 {
 @media (max-width: 450px) {
   .p-footer {
     font-size: 8px;
+    width: 90%;
     padding: 0px 5px;
   }
 }
@@ -432,24 +459,16 @@ h4 {
   }
 }
 
-.card-tienda {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
 .card-tienda .card-birra {
-  width: 250px;
   border: 2px solid black;
   border-radius: 10px;
+  width: 100%;
 }
 .card-tienda .card-birra img {
   width: 100%;
+  max-width: 100%;
   border-bottom: 1px solid black;
   border-radius: 10px;
-  padding: 8px;
 }
 .card-tienda .card-birra .contenido-card {
   padding: 10px;
@@ -459,23 +478,8 @@ h4 {
   text-align: center;
 }
 .card-tienda .card-birra .contenido-card p {
-  font-size: 16px;
+  font-size: 20px;
   margin: 10px 0;
-}
-@media (max-width: 450px) {
-  .card-tienda .card-birra {
-    width: 90%;
-    margin-bottom: 15px;
-  }
-}
-@media (min-width: 451px) and (max-width: 1024px) {
-  .card-tienda .card-tienda {
-    justify-content: center;
-  }
-  .card-tienda .card-birra {
-    width: 45%;
-    margin-bottom: 20px;
-  }
 }
 
 .otra-pagina, .btn-compra, .btn-mail {
@@ -621,7 +625,7 @@ h4 {
 .formulario .campo {
   width: 100%;
   padding: 8px;
-  font-size: 16px;
+  font-size: 20px;
   border: 1px solid black;
   border-radius: 6px;
   box-sizing: border-box;

@@ -1,7 +1,10 @@
 .navbar{
     background-color: antiquewhite;
     padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
     @media (max-width: 450px) {
+        width: 100%;
         padding: 8px;
     }
 

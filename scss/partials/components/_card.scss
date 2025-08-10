@@ -6,12 +6,11 @@
     border: 2px solid black;
     border-radius: 10px;
     width: 100%;
-
     img {
       width: 100%;
+      max-width: 100%;
       border-bottom: 1px solid black;
       border-radius: 10px;
-      padding: 8px;
     }
 
     .contenido-card {
