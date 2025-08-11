@@ -2,12 +2,15 @@
 @use "../utilities/mixins";
 
 .card-tienda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
   .card-birra {
     border: 2px solid black;
     border-radius: 10px;
-    width: 100%;
+    width: 300px;
     img {
-      width: 100%;
       max-width: 100%;
       border-bottom: 1px solid black;
       border-radius: 10px;

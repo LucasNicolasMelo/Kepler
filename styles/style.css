@@ -353,7 +353,7 @@ h4 {
   margin-top: 20px;
 }
 .contenido-secundario .texto-secundario {
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
   text-align: center;
 }
@@ -459,13 +459,18 @@ h4 {
   }
 }
 
+.card-tienda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
 .card-tienda .card-birra {
   border: 2px solid black;
   border-radius: 10px;
-  width: 100%;
+  width: 300px;
 }
 .card-tienda .card-birra img {
-  width: 100%;
   max-width: 100%;
   border-bottom: 1px solid black;
   border-radius: 10px;
