@@ -18,11 +18,11 @@ p{
     padding: 10px 20px;
 
     @media (max-width: 450px) {
-        font-size: 10px;
+        font-size: 16px;
         padding: 5px 10px;
     }
     @media (min-width: 451px) and (max-width: 1024px) {
-        font-size: 12px;
+        font-size: 20px;
         padding: 10px 15px;
     }
 
@@ -34,12 +34,12 @@ h1 {
     margin: 20px;
     padding: 20px;
     @media (max-width: 450px) {
-        font-size: 20px;
+        font-size: 30px;
         margin: 10px;
         padding: 10px;
     }
     @media (min-width: 451px) and (max-width: 1024px) {
-        font-size: 30px;
+        font-size: 40px;
         margin: 16px;
         padding: 16px;
     }
@@ -51,12 +51,12 @@ h2{
     margin: 20px;
     padding: 20px;
     @media (max-width: 450px) {
-        font-size: 12px;
+        font-size: 20px;
         margin: 10px;
         padding: 10px;
     }
     @media (min-width: 451px) and (max-width: 1024px) {
-        font-size: 16px;
+        font-size: 30px;
         margin: 16px;
         padding: 16px;
     }
