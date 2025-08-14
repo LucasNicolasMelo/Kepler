@@ -498,7 +498,7 @@ h4 {
 
 .otra-pagina {
   display: inline-block;
-  font-size: 16px;
+  font-size: 24px;
   background-color: #c9d2c9;
   margin: 20px;
   padding: 10px 20px;
@@ -509,14 +509,14 @@ h4 {
 }
 @media (max-width: 450px) {
   .otra-pagina {
-    font-size: 12px;
+    font-size: 16px;
     margin: 8px;
     padding: 8px 14px;
   }
 }
 @media (min-width: 451px) and (max-width: 1024px) {
   .otra-pagina {
-    font-size: 14px;
+    font-size: 20px;
     margin: 12px;
     padding: 10px 16px;
   }
@@ -524,7 +524,7 @@ h4 {
 
 .btn-compra {
   display: block;
-  font-size: 16px;
+  font-size: 24px;
   background-color: #c9d2c9;
   text-align: center;
 }
@@ -534,14 +534,14 @@ h4 {
 }
 @media (max-width: 450px) {
   .btn-compra {
-    font-size: 12px;
+    font-size: 16px;
     margin: 8px;
     padding: 8px 14px;
   }
 }
 @media (min-width: 451px) and (max-width: 1024px) {
   .btn-compra {
-    font-size: 14px;
+    font-size: 20px;
     margin: 12px;
     padding: 10px 16px;
   }
@@ -549,7 +549,7 @@ h4 {
 
 .btn-mail {
   display: inline-block;
-  font-size: 16px;
+  font-size: 24px;
   background-color: #c9d2c9;
   text-align: center;
 }
@@ -559,14 +559,14 @@ h4 {
 }
 @media (max-width: 450px) {
   .btn-mail {
-    font-size: 12px;
+    font-size: 16px;
     margin: 8px;
     padding: 8px 14px;
   }
 }
 @media (min-width: 451px) and (max-width: 1024px) {
   .btn-mail {
-    font-size: 14px;
+    font-size: 20px;
     margin: 12px;
     padding: 10px 16px;
   }
@@ -619,12 +619,12 @@ h4 {
 }
 @media (max-width: 450px) {
   .formulario label {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 @media (min-width: 451px) and (max-width: 1024px) {
   .formulario label {
-    font-size: 12px;
+    font-size: 20px;
   }
 }
 .formulario .campo {
@@ -637,12 +637,12 @@ h4 {
 }
 @media (max-width: 450px) {
   .formulario .campo {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 @media (min-width: 451px) and (max-width: 1024px) {
   .formulario .campo {
-    font-size: 12px;
+    font-size: 20px;
   }
 }
 .formulario textarea.campo {
