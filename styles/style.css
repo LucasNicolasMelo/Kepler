@@ -174,14 +174,14 @@ h3 {
 }
 @media (max-width: 450px) {
   h3 {
-    font-size: 12px;
+    font-size: 20px;
     margin: 10px;
     padding: 10px;
   }
 }
 @media (min-width: 451px) and (max-width: 1024px) {
   h3 {
-    font-size: 16px;
+    font-size: 30px;
     margin: 16px;
     padding: 16px;
   }
@@ -193,12 +193,12 @@ h4 {
 }
 @media (max-width: 450px) {
   h4 {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 @media (min-width: 451px) and (max-width: 1024px) {
   h4 {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 
