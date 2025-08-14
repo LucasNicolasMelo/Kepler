@@ -89,7 +89,7 @@ li {
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: #faebd7;
   margin: 5px;
 }
 @media (max-width: 450px) {
@@ -104,7 +104,7 @@ body {
 }
 
 p {
-  color: dimgray;
+  color: #626262;
   font-size: 20px;
   padding: 10px 20px;
 }
@@ -122,7 +122,7 @@ p {
 }
 
 h1 {
-  color: darkgreen;
+  color: #006400;
   font-size: 50px;
   font-weight: 700;
   margin: 20px;
@@ -144,7 +144,7 @@ h1 {
 }
 
 h2 {
-  color: rgb(3, 152, 3);
+  color: #007d00;
   font-size: 40px;
   font-weight: 600;
   margin: 20px;
@@ -166,7 +166,7 @@ h2 {
 }
 
 h3 {
-  color: rgb(3, 152, 3);
+  color: #007d00;
   font-size: 40px;
   font-weight: 500;
   margin: 20px;
@@ -188,7 +188,7 @@ h3 {
 }
 
 h4 {
-  color: rgb(3, 152, 3);
+  color: #007d00;
   font-size: 40px;
 }
 @media (max-width: 450px) {
@@ -489,7 +489,7 @@ h4 {
 
 .otra-pagina, .btn-compra, .btn-mail {
   text-decoration: none;
-  color: rgb(69, 68, 68);
+  color: #454444;
   border-radius: 8px;
   border: 1px solid black;
   padding: 8px 16px;
@@ -499,7 +499,7 @@ h4 {
 .otra-pagina {
   display: inline-block;
   font-size: 16px;
-  background-color: rgb(201, 210, 201);
+  background-color: #c9d2c9;
   margin: 20px;
   padding: 10px 20px;
 }
@@ -525,7 +525,7 @@ h4 {
 .btn-compra {
   display: block;
   font-size: 16px;
-  background-color: rgb(201, 210, 201);
+  background-color: #c9d2c9;
   text-align: center;
 }
 .btn-compra:hover {
@@ -550,7 +550,7 @@ h4 {
 .btn-mail {
   display: inline-block;
   font-size: 16px;
-  background-color: rgb(201, 210, 201);
+  background-color: #c9d2c9;
   text-align: center;
 }
 .btn-mail:hover {
